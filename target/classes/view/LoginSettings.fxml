@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginSettingsController">
+   <children>
+      <Label fx:id="ipAddressLabel" layoutX="107.0" layoutY="118.0" text="ip地址">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="portLabel" layoutX="106.0" layoutY="187.0" text="端口号">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ipAddressTextField" layoutX="199.0" layoutY="116.0" />
+      <TextField fx:id="portTextField" layoutX="199.0" layoutY="185.0" />
+      <Button id="saveButton" fx:id="saveButton" layoutX="373.0" layoutY="312.0" mnemonicParsing="false" onAction="#saveButtonAction" text="确定">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button id="cancelButton" fx:id="cancelButton" layoutX="467.0" layoutY="312.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="取消">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

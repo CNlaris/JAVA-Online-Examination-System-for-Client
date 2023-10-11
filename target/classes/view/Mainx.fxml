@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="mainAnchorPane" fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#catchKeyBoardPressedAction" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <children>
+        <Separator layoutX="-38.0" layoutY="121.0" prefHeight="1.0" prefWidth="1962.0" />
+        <Label id="courseNameLabel" fx:id="courseNameLabel" layoutX="13.0" layoutY="71.0" text="课程名称">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label id="stateLabel" fx:id="stateLabel" layoutX="5.0" layoutY="1055.0" prefHeight="23.0" prefWidth="537.0" text="状态">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <Label id="userNameAndNumberLabel" fx:id="userNameAndNumberLabel" layoutX="13.0" layoutY="38.0" prefHeight="30.0" prefWidth="237.0" text="姓名-学号">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label id="timeLabel" fx:id="timeLabel" layoutX="1528.0" layoutY="84.0" prefHeight="33.0" prefWidth="378.0" text="时间">
+            <font>
+                <Font size="20.0" />
+            </font></Label>
+        <AnchorPane id="mainPane" fx:id="mainPane" layoutY="169.0" prefHeight="885.0" prefWidth="1600.0">
+            <children>
+                <Pagination id="problemSet" fx:id="problemSetPagination" prefHeight="885.0" prefWidth="1606.0" visible="false" />
+                <Label id="remindLabel" fx:id="remindLabel" layoutX="512.0" layoutY="331.0" prefHeight="57.0" prefWidth="626.0" text="考试状态提示">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <Label id="examinationTimeLabel" fx:id="examinationTimeLabel" layoutX="512.0" layoutY="440.0" prefHeight="69.0" prefWidth="595.0">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Separator layoutX="1600.0" layoutY="121.0" orientation="VERTICAL" prefHeight="962.0" prefWidth="4.0" />
+        <Separator layoutY="1050.0" prefHeight="3.0" prefWidth="1600.0" />
+        <Label id="examEndTimeRemindLabel" fx:id="examEndTimeRemindLabel" layoutX="5.0" layoutY="132.0" prefHeight="30.0" prefWidth="568.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+          <Button id="fileButton" fx:id="fileButton" layoutX="824.0" layoutY="86.0" mnemonicParsing="false" onAction="#filmButtonOnAction" text="交卷" />
+          <Button id="exitButton" fx:id="exitButton" layoutX="1004.0" layoutY="86.0" mnemonicParsing="false" onAction="#exitButtonOnAction" text="退出" />
+    </children>
+</AnchorPane>
